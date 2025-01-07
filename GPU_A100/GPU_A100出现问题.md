@@ -3,6 +3,7 @@
 nvidia-smi # 无法找到驱动
 NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 ```
+## 方案一
 尝试安装aptitude出现如下报错：
 ![alt text](/figs/image-1.png)
 解决办法：<br />
@@ -53,3 +54,11 @@ sudo apt-get upgrade
 ```
 在更新源的时候，出现没有公钥签名的错误，需要添加公钥签名。
 ![alt text](/figs/image3.png)
+【上面的问题没有解决！！！】
+## 方案二
+更新为清华镜像源。网站：https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/ <br />
+首先查看自己的ubuntu版本：
+```shell
+lsb_release -a
+# uname -a
+```
