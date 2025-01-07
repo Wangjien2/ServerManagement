@@ -31,3 +31,23 @@ deb http://security.ubuntu.com/ubuntu/ noble-security main restricted universe m
 # deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
 # deb http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
 ```
+```shell
+### 新的源
+#网易163
+deb http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ trusty-backports main restricted universe multiverse
+```
+```shell
+### 更新源
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get upgrade
+```
