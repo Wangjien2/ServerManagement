@@ -97,3 +97,9 @@ sudo dkms install -m nvidia -v 550.54.15  #驱动版本，根据实际情况修�
 
 ---
 ## 验证GPU是否可以使用
+```python
+import torch
+device = torch.device("cuda" if torch.cuda.is_available()else "cpu")
+gpu_count = torch.cuda.device_count()
+gpu_count
+```
