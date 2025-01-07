@@ -95,4 +95,5 @@ sudo dkms install -m nvidia -v 550.54.15  #驱动版本，根据实际情况修�
 安装完成后，查看是否可以使用.
 ![alt text](/figs/image6.png)
 
-
+---
+## 验证GPU是否可以使用
