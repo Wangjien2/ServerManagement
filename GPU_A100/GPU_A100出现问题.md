@@ -51,3 +51,5 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get upgrade
 ```
+在更新源的时候，出现没有公钥签名的错误，需要添加公钥签名。
+![alt text](/figs/image3.png)
