@@ -76,4 +76,23 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 sudo apt-get upgrade
 ```
-阿里云镜像源。网站：https://developer.aliyun.com/mirror/ubuntu?from=html5linux
+![alt text](/figs/image5.png)
+阿里云镜像源。网站：https://developer.aliyun.com/mirror/ubuntu?from=html5linux <br />
+
+---
+更换完镜像源后便可以解决GPU驱动问题.
+```shell
+## 使用 nvcc -V 检查驱动和 cuda
+nvcc -V
+## 查看已安装驱动的版本信息
+ls /usr/src | grep nvidia
+# nvidia-550.54.15
+## 安装dkms
+sudo apt-get install dkms
+## 安装驱动
+sudo dkms install -m nvidia -v 550.54.15  #驱动版本，根据实际情况修改(ls /usr/src | grep nvidia)
+```
+安装完成后，查看是否可以使用.
+![alt text](/figs/image6.png)
+
+
