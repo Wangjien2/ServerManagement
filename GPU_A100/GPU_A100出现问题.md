@@ -60,5 +60,20 @@ sudo apt-get upgrade
 首先查看自己的ubuntu版本：
 ```shell
 lsb_release -a
+#No LSB modules are available.
+#Distributor ID: Ubuntu
+#Description:    Ubuntu 20.04.6 LTS
+#Release:        20.04
+#Codename:       focal
+
 # uname -a
 ```
+![alt text](/figs/image4.png)
+然后根据ubuntu版本，选择对应的镜像源。我选择的是focal，然后复制对应的镜像源地址。然后打开/etc/apt/sources.list文件，将文件内容替换为下面的内容：
+```shell
+### 更新源
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get upgrade
+```
+阿里云镜像源。网站：https://developer.aliyun.com/mirror/ubuntu?from=html5linux
